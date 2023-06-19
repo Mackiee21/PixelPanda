@@ -22,7 +22,7 @@ function Contact() {
                 Host: "smtp.elasticemail.com",
                 Username : "pandacmark21@gmail.com",
                 Password : "08F5ACA89840549688760FE40842C0046706",
-                To : "markpandac02@gmail.com",
+                To : "pandacallan5@gmail.com",
                 From : "pandacmark21@gmail.com",
                 Subject : subject,
                 Body : message
