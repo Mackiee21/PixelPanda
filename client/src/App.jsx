@@ -12,6 +12,11 @@ function App() {
     let option = {
         rootMargin: "-150px"
     }
+    if(window.screen.width <= 600){
+        option = {
+            rootMargin: "-50px"
+        }
+    }
     
     useEffect(() => {
         const observer = new IntersectionObserver(entries => {
@@ -19,11 +24,6 @@ function App() {
                 if(entry.isIntersecting){
                     //console.log('title-wrapper: ', entry)
                     //console.log(entry.target.id)
-                    if(window.innerWidth <= 600){
-                        option = {
-                            rootMargin: "-50px"
-                        }
-                    }
                     entry.target.classList.add("animate");
                     setActiveLink(entry.target.id);
                 }else{
