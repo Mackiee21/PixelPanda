@@ -17,7 +17,7 @@ function About() {
             </div>
             <div className="right-section">
                 <p>
-                    Welcome to the mobile photography portfolio of Allan Pandac! 
+                    Welcome to my mobile photography portfolio! 
                     I am thrilled to share with you my passion for capturing extraordinary 
                     moments using the power of smartphones. Through this website, I invite you 
                     to embark on a visual journey that showcases my unique perspective and love 
