@@ -1,0 +1,2 @@
+trye mak og check if rectClientBound.y sa element kai dako2 na or unsa ba even if and element is wala na na 
+unobserve

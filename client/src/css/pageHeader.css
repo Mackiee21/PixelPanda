@@ -1,0 +1,24 @@
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding-block: 0.5rem;
+  border-bottom: 2px solid rgb(6, 99, 6);
+}
+.title-wrapper .title-img {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+}
+.title-wrapper .title-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  mix-blend-mode: normal;
+}
+.title-wrapper h3 {
+  font-size: 1.2rem;
+  color: rgb(6, 99, 6);
+}

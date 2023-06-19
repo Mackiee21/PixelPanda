@@ -1,0 +1,154 @@
+.contact-wrapper {
+  min-height: 100vh;
+  opacity: 0;
+  transition: all 0.15s ease-out;
+  position: relative;
+  padding: 0;
+}
+.contact-wrapper form {
+  width: 90%;
+  margin-inline: auto;
+  padding: 1.5rem;
+}
+.contact-wrapper form h2 {
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem;
+  font-size: 1.2rem;
+  color: rgb(6, 99, 6);
+}
+.contact-wrapper form textarea {
+  resize: none;
+  padding: 0.8rem;
+  width: 100%;
+  min-height: 10rem;
+  font-size: 1rem;
+  text-indent: 1rem;
+}
+.contact-wrapper form textarea:is(:focus) {
+  outline: 1.5px solid green;
+}
+.contact-wrapper form .input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.contact-wrapper form .input-wrapper label {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.contact-wrapper form .input-wrapper .input {
+  width: 100%;
+  max-width: 25vw;
+  padding: 0.5rem 0.8rem;
+  border: 1.5px solid grey;
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem;
+}
+.contact-wrapper form .input-wrapper .input:is(:focus) {
+  outline: 1.2px solid green;
+}
+.contact-wrapper form .form-btn-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+.contact-wrapper form .form-btn-wrapper button {
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.7rem 0.9rem;
+  border-radius: 0.25rem;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(11, 137, 11);
+  color: white;
+  transition: opacity 0.1s ease-out;
+}
+.contact-wrapper form .form-btn-wrapper button:is(:hover) {
+  opacity: 0.8;
+}
+@media (max-width: 60rem) {
+  .contact-wrapper form .input {
+    min-width: 70%;
+  }
+}
+@media (max-width: 40rem) {
+  .contact-wrapper form {
+    width: 100%;
+    margin-inline: auto;
+  }
+  .contact-wrapper form .input {
+    min-width: 100%;
+  }
+}
+.contact-wrapper footer {
+  background-color: rgb(16, 16, 16);
+  color: white;
+  padding: 3rem 2rem;
+  -webkit-margin-before: 2rem;
+          margin-block-start: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.contact-wrapper footer .footer-info {
+  text-align: center;
+}
+.contact-wrapper footer .footer-info a i {
+  margin-inline: 0.4rem 0.3rem;
+}
+.contact-wrapper footer .footer-info p {
+  -webkit-margin-before: 0.1rem;
+          margin-block-start: 0.1rem;
+  -webkit-margin-start: 0.5rem;
+          margin-inline-start: 0.5rem;
+}
+.contact-wrapper footer .social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  -webkit-margin-before: 0.5rem;
+          margin-block-start: 0.5rem;
+}
+.contact-wrapper footer .social-icons a i {
+  padding: 0.5rem;
+  transition: all 0.1s ease-in;
+}
+.contact-wrapper footer .social-icons a i:hover {
+  cursor: pointer;
+  color: grey;
+}
+@media (max-width: 55rem) {
+  .contact-wrapper footer {
+    font-size: 1rem;
+    padding: 2rem;
+  }
+}
+@media (max-width: 40rem) {
+  .contact-wrapper footer {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+  .contact-wrapper footer .middle-footer {
+    display: none;
+  }
+  .contact-wrapper footer .social-icons {
+    -webkit-margin-before: 0.8rem;
+            margin-block-start: 0.8rem;
+  }
+}
+@media (max-width: 340px) {
+  .contact-wrapper footer {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-block: 1rem;
+  }
+}
+
+/*
+    TO DO IF KAYA I KNOW KAYA NIMO NI MAK JUST TRUST GOOGLE MEOW
+    1) WHEN MO SCROLL NA GANE KAI E DISPLAY ANG PIC NA DIV WITH ITS CORRESPONDING INFORMATION 
+    //ABOUT PAGE'S WHEREABOUTS LIKE PIC NI ALLAN TAS PHOTOS KONOHAY
+*/

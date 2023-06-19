@@ -1,0 +1,144 @@
+.contact-wrapper{
+    min-height: 100vh;
+    opacity: 0;
+    transition: all .15s ease-out;
+    position: relative;
+    padding: 0;
+    form{
+        width: 90%;
+        margin-inline: auto;
+        padding: 1.5rem;
+        h2{
+            margin-block-end: 1rem;
+            font-size: 1.2rem;
+            color:rgb(6, 99, 6);
+        }
+        textarea{
+            resize: none;
+            padding: 0.8rem;
+            width: 100%;
+            min-height: 10rem;
+            font-size: 1rem;
+            text-indent: 1rem;
+        }
+        textarea:is(:focus){
+            outline: 1.5px solid green;
+        }
+        .input-wrapper{
+            display: flex;
+            flex-direction: column;
+            label{
+                font-size: 1.1rem;
+                font-weight: 600;
+            }
+            .input{
+                width: 100%;
+                max-width: 25vw;
+                padding: 0.5rem 0.8rem;
+                border: 1.5px solid grey;
+                margin-block-end: 1rem;
+            }
+            .input:is(:focus){
+                outline: 1.2px solid green;
+            }
+        }
+        
+        .form-btn-wrapper{
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 1rem;
+            margin-top: 0.5rem;
+            button{
+                font-size: 0.9rem;
+                font-weight: 500;
+                padding: 0.7rem 0.9rem;
+                border-radius: 0.25rem;
+                border: none;
+                cursor: pointer;
+                background-color: rgb(11, 137, 11);
+                color: white;
+                transition: opacity 0.10s ease-out;
+            }
+            button:is(:hover){
+                opacity: 0.8;
+            }
+        }
+        @media (max-width: 60rem){
+            .input{
+                min-width: 70%;
+            }
+        }
+        @media (max-width: 40rem){
+            width: 100%;
+            margin-inline: auto;
+            .input{
+                min-width: 100%;
+            }
+        }
+    }
+    footer{
+        background-color: rgb(16, 16, 16);
+        color: white;
+        padding: 3rem 2rem;
+        margin-block-start: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-weight: 600;
+        font-size: 1.2rem;
+       .footer-info{
+        text-align: center;
+            a{
+                i{
+                    margin-inline: 0.4rem 0.3rem;
+                }
+            
+            }
+            p{
+                margin-block-start: 0.1rem;
+                margin-inline-start: 0.5rem;
+            }
+       }
+        .social-icons{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-block-start: 0.5rem;
+            a i{
+                padding: 0.5rem;
+                transition: all .10s ease-in;
+                &:hover{
+                    cursor: pointer;
+                    color: grey;
+                }
+            }
+        }
+        @media (max-width: 55rem){
+            font-size: 1rem;
+            padding: 2rem;
+        }
+        @media (max-width: 40rem){
+            font-size: 0.9rem;
+            padding: 0.5rem;
+            .middle-footer{
+                display: none;
+            }
+            .social-icons{
+                margin-block-start: 0.8rem;
+            }
+        }
+        @media (max-width: 340px){
+            flex-direction: column;
+            gap: 1.5rem;
+            padding-block: 1rem;
+        }
+      
+    }
+    
+}
+/*
+    TO DO IF KAYA I KNOW KAYA NIMO NI MAK JUST TRUST GOOGLE MEOW
+    1) WHEN MO SCROLL NA GANE KAI E DISPLAY ANG PIC NA DIV WITH ITS CORRESPONDING INFORMATION 
+    //ABOUT PAGE'S WHEREABOUTS LIKE PIC NI ALLAN TAS PHOTOS KONOHAY
+*/

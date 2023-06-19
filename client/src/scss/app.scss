@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Baloo 2';
+    overflow-x: hidden;
+}
+main{
+    width: 85%;
+    max-width: 1300px;
+    margin-inline: auto;
+    transition: all .15s ease-out;
+}
+.animate {
+    opacity: 1;
+}
+.active {
+    border-bottom: 3px solid rgb(16, 121, 16);
+}
+@media (max-width: 40rem){
+    main{
+        width: 95%;
+    }
+}

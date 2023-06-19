@@ -1,0 +1,68 @@
+.header {
+    padding-block: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 2px 1px grey;
+    background-color: white;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    .logo{
+        width: 150px;
+        height: 40px;
+        margin-left: 1rem;
+    }
+    .logo img{
+        width: 100%;
+        height: inherit;
+        object-fit: cover;
+        mix-blend-mode: normal; //removes the backgroun ata
+    }
+    ul{
+        display: flex;
+        gap: 2rem;
+        margin-inline: 4rem;
+        padding: 0.7rem 1.1rem;
+        list-style-type: none;
+    }
+    ul li{
+        cursor: pointer;
+    }
+    ul li a{
+        text-decoration: none;
+        color: rgb(4, 49, 4);
+        font-weight: 600;
+        font-size: 1.060rem;
+        padding-inline: 0.5rem;
+        transition: all 0.15s ease-out;
+    }
+    ul li a:hover{
+        color: goldenrod;
+    }
+    .hamburger{
+        background-color: transparent;
+        border: none;
+        margin-right: 1.5rem;
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+        display: none;
+        visibility: hidden;
+    }
+    @media (max-width: 40rem){
+        .hamburger{
+            display: block;
+            visibility: visible;
+        }
+       ul{
+        width: 100%;
+        margin: 0;
+        display: none;
+        visibility: hidden;
+        position: absolute;
+        top: 3.5rem;
+        overflow: hidden;
+       }
+    }
+}
