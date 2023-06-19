@@ -59,8 +59,13 @@ function Contact() {
                 <h2>Send me a message</h2>
                 <textarea onChange={handleChange} value={message} placeholder='Write your message here...' required></textarea>
                 <div className='input-wrapper'>
-                    <label htmlFor="input">Email</label>
+                    <label htmlFor="input">Sender's Email</label>
                     <input onChange={handleEmailChange} value={email} className='input' id='input' type="email"  required />
+                    <div className='note'>
+                        <p> Note: <span><i className="fa-regular fa-circle-xmark"></i></span>Please specify a correct and valid email as the sender. The sent email will also not be 
+                            put on your sent box. 
+                        </p>
+                    </div>
                 </div>
                 <div className='form-btn-wrapper'>
                     <button onClick={handleSubmit}>Send as Message</button>

@@ -12,6 +12,9 @@
         width: 150px;
         height: 40px;
         margin-left: 1rem;
+        @media (max-width: 40rem){
+            margin-left: 0.3rem;
+        }
     }
     .logo img{
         width: 100%;

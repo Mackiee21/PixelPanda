@@ -69,8 +69,10 @@
     }
     @media (max-width: 40rem){
         .grid{
-            grid-template-columns: 100%;
-            gap: 1.5rem;
+            .card{
+                border: none;
+            }
+            gap: 1rem;
         }
     }
 }

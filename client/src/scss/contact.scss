@@ -36,10 +36,22 @@
                 max-width: 25vw;
                 padding: 0.5rem 0.8rem;
                 border: 1.5px solid grey;
-                margin-block-end: 1rem;
             }
             .input:is(:focus){
                 outline: 1.2px solid green;
+            }
+            .note{
+                margin-block-end: 1rem;
+                margin-block-start: 0.2rem;
+                color: grey;
+                font-style: italic;
+                span{
+                    margin-inline: 0.1rem;
+                    color: rgb(177, 1, 1);
+                }
+                @media (max-width: 40rem){
+                    font-size: 0.9rem;
+                }
             }
         }
         
@@ -124,8 +136,8 @@
             padding: 2rem;
         }
         @media (max-width: 40rem){
-            font-size: 0.9rem;
-            padding: 0.5rem;
+            font-size: 0.8rem;
+            padding: 1.5rem;
             .middle-footer{
                 display: none;
             }
