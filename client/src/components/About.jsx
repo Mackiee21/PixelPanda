@@ -17,12 +17,11 @@ function About() {
             </div>
             <div className="right-section">
                 <p>
-                    <span>Hi, I am Allan Pandac</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
+                    Welcome to the mobile photography portfolio of Allan Pandac! 
+                    I am thrilled to share with you my passion for capturing extraordinary 
+                    moments using the power of smartphones. Through this website, I invite you 
+                    to embark on a visual journey that showcases my unique perspective and love 
+                    for the art of mobile photography.
                 </p>
             </div>
         </div>
