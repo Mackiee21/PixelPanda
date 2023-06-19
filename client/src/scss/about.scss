@@ -9,7 +9,8 @@
     @media(max-width: 40rem){
         flex-direction: column;
         gap: 0;
-        min-height: 100vh;
+        min-height: calc(100vh - 80px);
+        border: 2px solid black;
     }
     .left-section{
         flex: 1;
@@ -59,7 +60,7 @@
     .right-section {
         flex: 2;
         @media (max-width: 40rem){
-            padding: 0 1.5rem 1.5rem;
+            padding: 0 1.5rem;
          }
         p{
             text-indent: 1.5rem;
