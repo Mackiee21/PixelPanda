@@ -74,6 +74,11 @@
             .input{
                 min-width: 100%;
             }
+            .form-btn-wrapper{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+            
         }
     }
     footer{
