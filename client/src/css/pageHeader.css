@@ -5,10 +5,23 @@
   padding-block: 0.5rem;
   border-bottom: 2px solid rgb(6, 99, 6);
 }
+@media (max-width: 40rem) {
+  .title-wrapper {
+    width: 90%;
+    margin-inline: auto;
+    border-bottom-width: 1.5px;
+  }
+}
 .title-wrapper .title-img {
   width: 50px;
   height: 50px;
   overflow: hidden;
+}
+@media (max-width: 40rem) {
+  .title-wrapper .title-img {
+    width: 35px;
+    height: 35px;
+  }
 }
 .title-wrapper .title-img img {
   display: block;
@@ -21,4 +34,9 @@
 .title-wrapper h3 {
   font-size: 1.2rem;
   color: rgb(6, 99, 6);
+}
+@media (max-width: 40rem) {
+  .title-wrapper h3 {
+    font-size: 1rem;
+  }
 }

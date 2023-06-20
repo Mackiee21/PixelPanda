@@ -1,5 +1,5 @@
 .contact-wrapper {
-  min-height: 100vh;
+  min-height: 100%;
   opacity: 0;
   transition: all 0.15s ease-out;
   position: relative;
@@ -33,6 +33,7 @@
 }
 .contact-wrapper form .input-wrapper label {
   font-size: 1.1rem;
+  color: rgb(6, 99, 6);
   font-weight: 600;
 }
 .contact-wrapper form .input-wrapper .input {
@@ -40,11 +41,26 @@
   max-width: 25vw;
   padding: 0.5rem 0.8rem;
   border: 1.5px solid grey;
-  -webkit-margin-after: 1rem;
-          margin-block-end: 1rem;
 }
 .contact-wrapper form .input-wrapper .input:is(:focus) {
   outline: 1.2px solid green;
+}
+.contact-wrapper form .input-wrapper .note {
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem;
+  -webkit-margin-before: 0.2rem;
+          margin-block-start: 0.2rem;
+  color: grey;
+  font-style: italic;
+}
+.contact-wrapper form .input-wrapper .note span {
+  margin-inline: 0.1rem;
+  color: rgb(177, 1, 1);
+}
+@media (max-width: 40rem) {
+  .contact-wrapper form .input-wrapper .note {
+    font-size: 0.9rem;
+  }
 }
 .contact-wrapper form .form-btn-wrapper {
   display: flex;
@@ -78,6 +94,13 @@
   }
   .contact-wrapper form .input {
     min-width: 100%;
+  }
+  .contact-wrapper form .form-btn-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact-wrapper form .form-btn-wrapper button:nth-child(1) {
+    order: 1;
   }
 }
 .contact-wrapper footer {
@@ -120,6 +143,9 @@
   cursor: pointer;
   color: grey;
 }
+.contact-wrapper footer .social-icons a:is(:active, :visited) {
+  color: unset;
+}
 @media (max-width: 55rem) {
   .contact-wrapper footer {
     font-size: 1rem;
@@ -128,8 +154,8 @@
 }
 @media (max-width: 40rem) {
   .contact-wrapper footer {
-    font-size: 0.9rem;
-    padding: 0.5rem;
+    font-size: 0.8rem;
+    padding: 1.5rem;
   }
   .contact-wrapper footer .middle-footer {
     display: none;

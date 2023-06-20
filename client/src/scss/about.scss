@@ -53,12 +53,20 @@
                 color: green;
                 transform: scale(1.3)
             }
+            a:is(:active, :visited){
+                color: unset;
+            }
         }
     }
     .right-section {
         flex: 2;
+        font-size: 1.25rem;
         @media (max-width: 40rem){
             padding: 0 1.5rem 1.5rem;
+            font-size: 1rem;
+        }
+         @media (min-width: 40rem) and (max-width: 55rem) {
+            font-size: 1.125rem;
          }
         p{
             text-indent: 1.5rem;

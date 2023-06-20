@@ -10,9 +10,9 @@ function About() {
                 <h3>Allan Pandac</h3>
                 <h4>pandacallan5@gmail.com</h4>
                 <div className='social-logo'>
-                    <a><i className="fa-brands fa-facebook-square fa-xl" aria-hidden="true"></i></a>
-                    <a><i className="fa-brands fa-instagram fa-xl" aria-hidden="true"></i></a>
-                    <a><i className="fa-brands fa-tiktok fa-xl" aria-hidden="true"></i></a>
+                    <a href='https://www.facebook.com/me.panda.07' target="_blank"><i className="fa-brands fa-facebook-square fa-xl" aria-hidden="true"></i></a>
+                    <a href='https://www.instagram.com/allan_pandac/?fbclid=IwAR3zBcOFTsSK0Xczx__KaOGPI5or6yCgAMK3KM-Z3tKw_32ESAn3ooo9dNE' target="_blank"><i className="fa-brands fa-instagram fa-xl" aria-hidden="true"></i></a>
+                    <a href='https://www.tiktok.com/@pandacallan' target="_blank"><i className="fa-brands fa-tiktok fa-xl" aria-hidden="true"></i></a>
                 </div>
             </div>
             <div className="right-section">

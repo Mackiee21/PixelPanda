@@ -52,6 +52,7 @@
         cursor: pointer;
         display: none;
         visibility: hidden;
+        color: rgb(4, 49, 4);
     }
     @media (max-width: 40rem){
         .hamburger{
@@ -59,13 +60,24 @@
             visibility: visible;
         }
        ul{
-        width: 100%;
+        display: block;
         margin: 0;
-        display: none;
-        visibility: hidden;
-        position: absolute;
-        top: 3.5rem;
         overflow: hidden;
+        position: fixed;
+        inset: 55px 0 0;
+        background-color: white;
+        transform: translateX(-100%);
+        transition: transform .30s ease-out;
+            li{
+                margin-bottom: 1.5rem;
+                padding: .5rem;
+                a{
+                    border: none;
+                }
+            }
+        }
+       .nav-open{
+        transform: translateX(0);
        }
     }
 }

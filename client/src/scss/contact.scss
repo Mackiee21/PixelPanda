@@ -29,6 +29,7 @@
             flex-direction: column;
             label{
                 font-size: 1.1rem;
+                color: rgb(6, 99, 6);
                 font-weight: 600;
             }
             .input{
@@ -90,6 +91,9 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr;
             }
+            .form-btn-wrapper button:nth-child(1){
+                order: 1;
+            }
             
         }
     }
@@ -129,6 +133,9 @@
                     cursor: pointer;
                     color: grey;
                 }
+            }
+            a:is(:active, :visited){
+                color: unset;
             }
         }
         @media (max-width: 55rem){
