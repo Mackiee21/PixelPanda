@@ -129,12 +129,13 @@
             a i{
                 padding: 0.5rem;
                 transition: all .10s ease-in;
+                color: black;
                 &:hover{
                     cursor: pointer;
                     color: grey;
                 }
             }
-            a:is(:active, :visited){
+            a i:is(:active, :visited){
                 color: unset;
             }
         }

@@ -52,15 +52,16 @@
   -webkit-tap-highlight-color: transparent;
   cursor: pointer;
 }
-.about-wrapper .left-section .social-logo a {
+.about-wrapper .left-section .social-logo a i {
   transition: all 0.1s ease-out;
   padding: 0.5rem;
+  color: black;
 }
-.about-wrapper .left-section .social-logo a:hover {
+.about-wrapper .left-section .social-logo a i:hover {
   color: green;
   transform: scale(1.3);
 }
-.about-wrapper .left-section .social-logo a:is(:active, :visited) {
+.about-wrapper .left-section .social-logo a i:is(:active, :visited) {
   color: unset;
 }
 .about-wrapper .right-section {

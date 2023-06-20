@@ -138,12 +138,13 @@
 .contact-wrapper footer .social-icons a i {
   padding: 0.5rem;
   transition: all 0.1s ease-in;
+  color: black;
 }
 .contact-wrapper footer .social-icons a i:hover {
   cursor: pointer;
   color: grey;
 }
-.contact-wrapper footer .social-icons a:is(:active, :visited) {
+.contact-wrapper footer .social-icons a i:is(:active, :visited) {
   color: unset;
 }
 @media (max-width: 55rem) {
