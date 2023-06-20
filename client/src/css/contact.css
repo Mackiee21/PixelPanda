@@ -138,7 +138,7 @@
 .contact-wrapper footer .social-icons a i {
   padding: 0.5rem;
   transition: all 0.1s ease-in;
-  color: black;
+  color: white;
 }
 .contact-wrapper footer .social-icons a i:hover {
   cursor: pointer;
