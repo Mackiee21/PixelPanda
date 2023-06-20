@@ -53,6 +53,7 @@
         display: none;
         visibility: hidden;
         color: rgb(4, 49, 4);
+        -webkit-tap-highlight-color: transparent;
     }
     @media (max-width: 40rem){
         .hamburger{
