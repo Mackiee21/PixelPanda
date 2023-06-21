@@ -46,8 +46,8 @@ function Header(props) {
 
     const renderedLinks = links.map((link, index) => {
         return(
-            <li key={index}>
-                <a onClick={handleClick} className={activeLink == index ? 'active': ""}>{link.text}</a></li>
+            <li onClick={handleClick} key={index}>
+                <a className={activeLink == index ? 'active': ""}>{link.text}</a></li>
         );
     });
 
