@@ -4,6 +4,10 @@
     transition: all .15s ease-out;
     position: relative;
     padding: 0;
+    scroll-margin-top: 4.2rem;
+    @media (max-width: 40rem){
+        scroll-margin-top: 8rem;
+    }
     form{
         width: 90%;
         margin-inline: auto;

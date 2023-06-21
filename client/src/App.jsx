@@ -3,10 +3,20 @@ import About from './components/About';
 import Photos from './components/Photos';
 import Contact from './components/Contact';
 import './scss/app.scss';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, createContext } from 'react';
+
+const MainRefContext = createContext();
+
 function App() {
     const contentRef = useRef();
-    const navRef = useRef();
+    const galleryRef = useRef(null);
+    const aboutRef = useRef(null);
+    const contactRef = useRef(null);
+    const contextValues = {
+        galleryRef,
+        aboutRef,
+        contactRef
+    }
     const [activeLink, setActiveLink] = useState(0);
 
     let option = {
@@ -48,16 +58,19 @@ function App() {
         }
     }, [])
     return(
-        <div>
-            <Header ref={navRef} activeLink={activeLink} />
-            <main ref={contentRef}>
-                <About />
-                <Photos />
-                <Contact />
-            </main>
-        </div>
+        <MainRefContext.Provider value={contextValues}>
+            <div>
+                <Header activeLink={activeLink} />
+                    <main ref={contentRef}>
+                        <About ref={aboutRef} />
+                        <Photos ref={galleryRef} />
+                        <Contact ref={contactRef} />
+                    </main>
+            </div>
+        </MainRefContext.Provider>
     );
 
 }
 
 export default App;
+export { MainRefContext }

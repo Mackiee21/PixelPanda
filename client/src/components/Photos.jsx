@@ -1,8 +1,9 @@
 import PageHeader from "./pageHeader";
 import { createPortal } from 'react-dom';
 import Modal from './Modal';
-import { useState, useRef } from 'react';
+import { useState, useRef, forwardRef } from 'react';
 import '../scss/photos.scss';
+import useMainRefContext from '../customHooks/useMainRefContext';
 import photo1 from '../assets/Web/chosen1.jpg';
 import photo2 from '../assets/Web/chosen2.jpg';
 import photo3 from '../assets/Web/chosen3.jpg';
@@ -14,7 +15,9 @@ import photo8 from '../assets/Web/lastchosen.jpg';
 import photo9 from '../assets/Web/chosen9.jpg';
 
 
-function Photos() {
+function Photos(_, ref) {
+    const { galleryContext } = useMainRefContext();
+    console.log("gallery context at photos", galleryContext)
     const [showModal, setShowModal] = useState(false);
     const [currEl, setCurrEl] = useState(null);
 
@@ -48,7 +51,7 @@ function Photos() {
             );
     })
     return(
-        <div className="wrapper" id="1">
+        <div ref={ref} className="wrapper" id="1">
             <PageHeader pageHeaderInfo={pageHeaderInfo} />
            <div className="grid">
             { images }
@@ -63,4 +66,4 @@ function Photos() {
 
 }
 
-export default Photos;
+export default forwardRef(Photos);

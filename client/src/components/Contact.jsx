@@ -1,8 +1,8 @@
 import PageHeader from './pageHeader';
 import '../scss/contact.scss';
-import { useState } from 'react';
+import { useState, forwardRef } from 'react';
 
-function Contact() {
+function Contact(_, ref) {
     const [message, setMessage] = useState("");
     const [email, setEmail] = useState("");
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -56,7 +56,7 @@ function Contact() {
         text: "Contact"
     }
     return(
-        <div className="contact-wrapper" id="2">
+        <div ref={ref} className="contact-wrapper" id="2">
             <PageHeader pageHeaderInfo={pageHeaderInfo}  />
             <form onSubmit={submitMessage}>
                 <h2>Send me a message</h2>
@@ -107,4 +107,4 @@ function Contact() {
 
 }
 
-export default Contact;
+export default forwardRef(Contact);
