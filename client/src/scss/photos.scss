@@ -26,26 +26,19 @@
                 &::after{
                     content: "";
                     position: absolute;
-                    top: 50%;
-                    left: 41%;
-                    transform: translate(-50%, -50%);
-                    width: 15%;
-                    height: 11%;
-                    border: 5px dotted black;
-                    border-radius: 50%;
+                    inset: 0;
+                    transform: translateY(-100%);
+                    background-color: rgb(237, 237, 237);
                     z-index: 3;
-                    animation: loading 2.5s linear infinite;
+                    animation: goDown 900ms linear infinite;
                 }
-                @keyframes loading {
-                    0%{
-                        transform: rotate(0deg);
-                    }
-                    50%{
-                        transform: rotate(180deg);
-                    }
-                    100%{
-                        transform: rotate(360deg);
-                    }
+                @keyframes goDown {
+                   from{
+                    transform: translateY(-100%);
+                   }
+                   to{
+                    transform: translateY(0);
+                   }
                     
                 }
                 &.loaded::before, &.loaded::after{
