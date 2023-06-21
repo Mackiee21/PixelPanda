@@ -40,6 +40,8 @@ function Contact(_, ref) {
                   }
                 );
             }
+        }else{
+            alert("Invalid email address")
         }
     }
 
