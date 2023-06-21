@@ -23,7 +23,32 @@
                     inset: 0;
                     background-color: rgb(234, 234, 234);
                 }
-                &.loaded::before{
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 41%;
+                    transform: translate(-50%, -50%);
+                    width: 15%;
+                    height: 11%;
+                    border: 5px dotted black;
+                    border-radius: 50%;
+                    z-index: 3;
+                    animation: loading 2.5s linear infinite;
+                }
+                @keyframes loading {
+                    0%{
+                        transform: rotate(0deg);
+                    }
+                    50%{
+                        transform: rotate(180deg);
+                    }
+                    100%{
+                        transform: rotate(360deg);
+                    }
+                    
+                }
+                &.loaded::before, &.loaded::after{
                     content: none;
                 }
                 &.loaded img{
