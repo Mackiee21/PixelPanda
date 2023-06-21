@@ -16,17 +16,29 @@
             overflow: hidden;
             border-radius: 0.125rem;
             transition:  transform .10s ease-in;
-            border: 1px solid black;
-           .image{
-                cursor: pointer;
+            cursor: pointer;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    inset: 0;
+                    background-color: rgb(234, 234, 234);
+                }
+                &.loaded::before{
+                    content: none;
+                }
+                &.loaded img{
+                    opacity: 1;
+                }
                 img{
                     display: block;
                     width: 100%;
                     aspect-ratio:  3 / 4;
                     object-fit: cover;
                     object-position: center;
+                    opacity: 0;
+                    transition: opacity 500ms ease-in-out;
                 }
-           }
+           
         //    .content{
         //     position: absolute;
         //     inset: 0;
@@ -71,9 +83,6 @@
     @media (max-width: 40rem){
         .grid{
             margin-top: 0;
-            .card{
-                border: none;
-            }
             gap: 1rem;
         }
     }
