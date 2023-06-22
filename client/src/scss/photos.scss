@@ -9,7 +9,7 @@
         margin-top: 1rem;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        padding: 1.5rem;
+        padding-block: 1.5rem;
         gap: 1.5rem;
         .card{
             position: relative;
@@ -102,6 +102,7 @@
         .grid{
             margin-top: 0;
             gap: 1rem;
+            padding-inline: 0;
         }
     }
 }

@@ -17,7 +17,7 @@ function Contact(_, ref) {
             if(message.trim() && email.trim()){
                 e.preventDefault();
                 const messageType = e.target.innerText.toLowerCase();
-                let subject = messageType === "send as message" ? "Personal Message" : "User Feedback";
+                let subject = messageType === "send message" ? "Personal Message" : "User Feedback";
                 // console.log(emailRef.current.value)
                 subject += ` FROM: ${email}`;
                 Email.send({
@@ -67,14 +67,14 @@ function Contact(_, ref) {
                     <label htmlFor="input">Your Email</label>
                     <input onChange={handleEmailChange} value={email} className='input' id='input' type="email"  required />
                     <div className='note'>
-                        <p> Note: <span><i className="fa-regular fa-circle-xmark"></i></span>Please specify a correct and valid email as the sender. The sent email will also not be 
+                        <p> Note: <span><i class="fa-solid fa-circle-exclamation"></i></span>Please specify a correct and valid email as the sender. The sent email will also not be 
                             put on your sent box. 
                         </p>
                     </div>
                 </div>
                 <div className='form-btn-wrapper'>
-                    <button onClick={handleSubmit}>Send as Message</button>
-                    <button onClick={handleSubmit}>Send as feedback</button>
+                    <button onClick={handleSubmit}>Send Message</button>
+                    <button onClick={handleSubmit}>Send feedback</button>
                 </div>
             </form>
             <footer>

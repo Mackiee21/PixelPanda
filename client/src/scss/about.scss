@@ -9,7 +9,8 @@
     scroll-margin-top: 4.2rem;
     @media(max-width: 40rem){
         flex-direction: column;
-        gap: 0;
+        gap: 1rem;
+        min-height: calc(100% - 80px);
     }
     .left-section{
         flex: 1;
@@ -19,6 +20,7 @@
         align-items: center;
         padding-block: 2rem;
         border-radius: 0.25rem;
+        font-size: 1.125rem;
         @media (max-width: 40rem){
             box-shadow: none;
             margin-top: 2rem;
@@ -62,17 +64,15 @@
     }
     .right-section {
         flex: 2;
-        font-size: 1.25rem;
+        font-size: clamp(1.075rem, 2vw, 1.3rem);
         @media (max-width: 40rem){
-            padding: 0 1.5rem;
-            font-size: 1.075rem;
-            height: auto;
+            padding: 0;
+            margin-block-end: 2rem;
         }
-         @media (min-width: 40rem) and (max-width: 55rem) {
-            font-size: 1.125rem;
-         }
+        //  @media (min-width: 40rem) and (max-width: 55rem) {
+        //     font-size: 1.125rem;
+        //  }
         p{
-            text-indent: 1.5rem;
             text-align: justify;
             font-weight: 300;
         }

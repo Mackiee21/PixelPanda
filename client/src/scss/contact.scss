@@ -9,9 +9,7 @@
         scroll-margin-top: 8rem;
     }
     form{
-        width: 90%;
-        margin-inline: auto;
-        padding: 1.5rem;
+        margin-block-start: 1.5rem;
         h2{
             margin-block-end: 1rem;
             font-size: 1.2rem;
@@ -23,7 +21,14 @@
             width: 100%;
             min-height: 10rem;
             font-size: 1rem;
-            text-indent: 1rem;
+
+            @media (max-width: 40rem){
+                min-height: 6rem;
+                &::placeholder{
+                    font-size: 0.9rem;
+                }
+            }
+            
         }
         textarea:is(:focus){
             outline: 1.5px solid green;
@@ -39,7 +44,7 @@
             .input{
                 width: 100%;
                 max-width: 25vw;
-                padding: 0.5rem 0.8rem;
+                padding: 0.6rem 0.8rem;
                 border: 1.5px solid grey;
             }
             .input:is(:focus){
@@ -49,7 +54,6 @@
                 margin-block-end: 1rem;
                 margin-block-start: 0.2rem;
                 color: grey;
-                font-style: italic;
                 span{
                     margin-inline: 0.1rem;
                     color: rgb(177, 1, 1);

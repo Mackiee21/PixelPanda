@@ -3,13 +3,12 @@
   align-items: center;
   gap: 0.7rem;
   padding-block: 0.5rem;
-  border-bottom: 2px solid rgb(6, 99, 6);
+  border-bottom: 1.5px solid rgb(6, 99, 6);
 }
 @media (max-width: 40rem) {
   .title-wrapper {
-    width: 90%;
     margin-inline: auto;
-    border-bottom-width: 1.5px;
+    border-bottom-width: 1px;
   }
 }
 .title-wrapper .title-img {

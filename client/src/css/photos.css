@@ -5,12 +5,13 @@
   margin-bottom: 1.5rem;
   opacity: 0;
   transition: all 0.1s ease-out;
+  scroll-margin-top: 4.2rem;
 }
 .wrapper .grid {
   margin-top: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 1.5rem;
+  padding-block: 1.5rem;
   gap: 1.5rem;
 }
 .wrapper .grid .card {
@@ -18,12 +19,47 @@
   overflow: hidden;
   border-radius: 0.125rem;
   transition: transform 0.1s ease-in;
-  border: 1px solid black;
-}
-.wrapper .grid .card .image {
   cursor: pointer;
 }
-.wrapper .grid .card .image img {
+.wrapper .grid .card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgb(234, 234, 234);
+}
+.wrapper .grid .card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateY(-100%);
+  background-color: rgb(237, 237, 237);
+  z-index: 3;
+  -webkit-animation: goDown 900ms linear infinite;
+          animation: goDown 900ms linear infinite;
+}
+@-webkit-keyframes goDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes goDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.wrapper .grid .card.loaded::before, .wrapper .grid .card.loaded::after {
+  content: none;
+}
+.wrapper .grid .card.loaded img {
+  opacity: 1;
+}
+.wrapper .grid .card img {
   display: block;
   width: 100%;
   aspect-ratio: 3/4;
@@ -31,6 +67,8 @@
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
 }
 .wrapper .grid .card:is(:hover) {
   transform: scale(1.0125);
@@ -68,8 +106,6 @@
   .wrapper .grid {
     margin-top: 0;
     gap: 1rem;
-  }
-  .wrapper .grid .card {
-    border: none;
+    padding-inline: 0;
   }
 }
