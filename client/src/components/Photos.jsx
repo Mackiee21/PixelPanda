@@ -10,7 +10,7 @@ import photo3 from '../assets/Web/chosen3.jpg';
 import photo4 from '../assets/Web/chosen4.jpg';
 import photo5 from '../assets/Web/chosen5.jpg';
 import photo6 from '../assets/Web/chosen6.jpg';
-import photo7 from '../assets/Web/chosen7.jpg';
+import photo7 from '../assets/Web/photo7.jpg';
 import photo8 from '../assets/Web/lastchosen.jpg';
 import photo9 from '../assets/Web/chosen9.jpg';
 
