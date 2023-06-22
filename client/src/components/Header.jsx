@@ -4,6 +4,7 @@ import '../scss/header.scss';
 import useMainRefContext from '../customHooks/useMainRefContext';
 
 function Header(props) {
+    const headerRef = useRef(null);
     const { galleryRef, aboutRef, contactRef } = useMainRefContext();
     const hamburgerRef = useRef(null);
     //const { galleryRef } = props;
@@ -28,17 +29,21 @@ function Header(props) {
 
         //scroll to specified element
         const target = e.target.innerText;
+        //get header height for scroll top margin value
+        const headerHeight = headerRef.current.clientHeight;
+        console.log(headerHeight)
         switch(target){
             case 'About':
-                aboutRef.current?.scrollIntoView({behavior: 'smooth'});
+                aboutRef.current.style.scrollMarginTop = headerHeight + "px";
+                aboutRef.current.scrollIntoView({behavior: 'smooth'});
             break;
             case 'Gallery':
-                setTimeout(() => {
-                    galleryRef.current?.scrollIntoView({ behavior: 'smooth'});
-                }, 30)
+                galleryRef.current.style.scrollMarginTop = headerHeight + "px";
+                galleryRef.current.scrollIntoView({ behavior: 'smooth'});
             break;
             case 'Contact':
-                contactRef.current?.scrollIntoView({behavior: 'smooth'});
+                contactRef.current.style.scrollMarginTop = headerHeight + "px";
+                contactRef.current.scrollIntoView({behavior: 'smooth'});
             break;
             default: alert("invalid")
         }
@@ -69,7 +74,7 @@ function Header(props) {
         document.body.style.overflow = "auto";
     }
     return(
-        <nav className='header'>
+        <nav ref={headerRef} className='header'>
             <div className="logo">
                 <img src={logo} alt="logo" />
             </div>

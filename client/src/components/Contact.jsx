@@ -67,7 +67,7 @@ function Contact(_, ref) {
                     <label htmlFor="input">Your Email</label>
                     <input onChange={handleEmailChange} value={email} className='input' id='input' type="email"  required />
                     <div className='note'>
-                        <p> Note: <span><i class="fa-solid fa-circle-exclamation"></i></span>Please specify a correct and valid email as the sender. The sent email will also not be 
+                        <p> Note: <span><i className="fa-solid fa-circle-exclamation"></i></span>Please specify a correct and valid email as the sender. The sent email will also not be 
                             put on your sent box. 
                         </p>
                     </div>
