@@ -3,14 +3,13 @@ import { createPortal } from 'react-dom';
 import Modal from './Modal';
 import { useEffect, useRef, forwardRef } from 'react';
 import '../scss/photos.scss';
-import useMainRefContext from '../customHooks/useMainRefContext';
 import photo1 from '../assets/Web/chosen1.jpg';
 import photo2 from '../assets/Web/chosen2.jpg';
 import photo3 from '../assets/Web/chosen3.jpg';
 import photo4 from '../assets/Web/chosen4.jpg';
 import photo5 from '../assets/Web/chosen5.jpg';
 import photo6 from '../assets/Web/chosen6.jpg';
-import photobongbong from '../assets/Web/photo7.jpg';
+import photobongbong from '../assets/Web/lastnajd.jpg';
 import photo8 from '../assets/Web/lastchosen.jpg';
 import photo9 from '../assets/Web/chosen9.jpg';
 
