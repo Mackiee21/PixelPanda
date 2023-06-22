@@ -10,7 +10,7 @@ import photo3 from '../assets/Web/chosen3.jpg';
 import photo4 from '../assets/Web/chosen4.jpg';
 import photo5 from '../assets/Web/chosen5.jpg';
 import photo6 from '../assets/Web/chosen6.jpg';
-import photo7 from '../assets/Web/photo7.jpg';
+import photobongbong from '../assets/Web/photo7.jpg';
 import photo8 from '../assets/Web/lastchosen.jpg';
 import photo9 from '../assets/Web/chosen9.jpg';
 
@@ -25,7 +25,7 @@ function Photos(_, ref) {
         link: "https://scontent.fceb1-2.fna.fbcdn.net/v/t39.30808-6/348436373_213259914852842_6357758812729540911_n.jpg?_nc_cat=100&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeH60lnrXeDshehXAEKwLStxGvpQaazAut4a-lBprMC63jIwRFw0pA4wtS0Zf12wWl4QnDYNs6FGmNMOrrLK7tJT&_nc_ohc=4CG7Ju-xwl8AX-8V8AY&_nc_ht=scontent.fceb1-2.fna&oh=00_AfBw2tdB3YV2kfI8R3tLv28xhREekxYM5Ih08bGnSQKFew&oe=6493E170",
         text: "Gallery"
     }
-    const cards = [photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9];
+    const cards = [photo1, photo2, photo3, photo4, photo5, photo6, photobongbong, photo8, photo9];
 
     const handleClickCard = (index) => {
         //document.body.style.overflowY = "hidden";
