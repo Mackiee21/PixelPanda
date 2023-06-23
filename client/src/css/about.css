@@ -58,7 +58,7 @@
 }
 @media (max-width: 40rem) {
   .about-wrapper .left-section .social-logo {
-    width: 90%;
+    width: 75%;
     gap: 2.2rem;
   }
 }
