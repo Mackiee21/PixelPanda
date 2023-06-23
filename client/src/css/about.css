@@ -70,11 +70,18 @@
   flex: 2;
   font-size: clamp(1.075rem, 2vw, 1.3rem);
 }
+.about-wrapper .right-section h2 {
+  font-size: 1.7rem;
+  color: rgb(87, 87, 87);
+}
 @media (max-width: 40rem) {
   .about-wrapper .right-section {
     padding: 0;
     -webkit-margin-after: 2rem;
             margin-block-end: 2rem;
+  }
+  .about-wrapper .right-section h2 {
+    font-size: 1.4rem;
   }
 }
 .about-wrapper .right-section p {

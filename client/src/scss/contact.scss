@@ -40,8 +40,12 @@
             .input{
                 width: 100%;
                 max-width: 25vw;
+                font-size: 1rem;
                 padding: 0.6rem 0.8rem;
                 border: 1.5px solid grey;
+                @media (max-width: 40rem){
+                    font-size: 0.9rem;
+                }
             }
             .input:is(:focus){
                 outline: 1.2px solid green;

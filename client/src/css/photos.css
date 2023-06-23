@@ -107,4 +107,7 @@
     gap: 1rem;
     padding-inline: 0;
   }
+  .wrapper .link {
+    font-size: 0.95rem;
+  }
 }
