@@ -178,22 +178,21 @@
 }
 @media (max-width: 40rem) {
   .contact-wrapper footer {
-    font-size: 0.95rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
     padding: 1.5rem 0;
+    font-size: 1.1rem;
+  }
+  .contact-wrapper footer .footer-info {
+    text-align: left;
   }
   .contact-wrapper footer .middle-footer {
     display: none;
   }
   .contact-wrapper footer .social-icons {
-    -webkit-margin-before: 0.8rem;
-            margin-block-start: 0.8rem;
-  }
-}
-@media (max-width: 340px) {
-  .contact-wrapper footer {
-    flex-direction: column;
-    gap: 1.5rem;
-    padding-block: 1rem;
+    justify-content: flex-start;
+    font-size: 1rem;
   }
 }
 

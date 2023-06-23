@@ -157,19 +157,21 @@
             padding: 2rem;
         }
         @media (max-width: 40rem){
-            font-size: 0.95rem;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1.5rem;
             padding: 1.5rem 0;
+            font-size: 1.1rem;
+            .footer-info{
+                text-align: left;
+            }
             .middle-footer{
                 display: none;
             }
             .social-icons{
-                margin-block-start: 0.8rem;
+                justify-content: flex-start;
+                font-size: 1rem;
             }
-        }
-        @media (max-width: 340px){
-            flex-direction: column;
-            gap: 1.5rem;
-            padding-block: 1rem;
         }
       
     }

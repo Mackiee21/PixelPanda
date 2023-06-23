@@ -2,7 +2,7 @@ import PageHeader from './pageHeader';
 import { MessageSent } from '../loading/messageSent';
 import { MessageSending } from '../loading/messageSent';
 import '../scss/contact.scss';
-import { useState, forwardRef, useRef } from 'react';
+import { useState, forwardRef } from 'react';
 
 function Contact(_, ref) {
     const [message, setMessage] = useState("");
@@ -15,14 +15,16 @@ function Contact(_, ref) {
         //just in case makalimot ka mak, matawag japon ang function sa ubos once e enter sa user
         //ang email input field
     }
+  
     if(isSending && !sent ){
-       document.body.style.overflow = "hidden";
+        document.body.style.overflow = "hidden";
     }else{
-       document.body.style.overflow = "auto";
+        document.body.style.overflow = "auto";
     }
+
     const handleSubmit = (e) => {
-        if(emailRegex.test(email)){
-            if(message.trim() && email.trim()){
+        if(message.trim() && email.trim()){
+            if(emailRegex.test(email)){
                 e.preventDefault();
                 setIsSending(true);
                 const messageType = e.target.innerText.toLowerCase();
@@ -38,7 +40,7 @@ function Contact(_, ref) {
                     Subject : subject,
                     Body : message
                 }).then(
-                  message => {
+                    message => {
                     if(message === "OK"){
                         setIsSending(false);
                         setSent(true);
@@ -50,11 +52,11 @@ function Contact(_, ref) {
                     }else{
                         alert(message)
                     }
-                  }
+                    }
                 );
+            }else{
+                alert("Invalid email address")
             }
-        }else{
-            alert("Invalid email address")
         }
     }
 

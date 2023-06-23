@@ -1,6 +1,7 @@
 .loading-wrapper-sent{
     position: fixed;
     inset: 65px 0 0;
+    background-color: rgba(128, 128, 128, .1);
     .modal{
         position: absolute;
         left: 50%;
@@ -9,8 +10,9 @@
         width: 30%;
         height: fit-content;
         padding-block: 5rem;
-        background-color: rgb(245, 245, 245);;
-        border: 2px solid rgb(230, 230, 230);
+        background-color: rgb(245, 245, 245);
+        border: none;
+        box-shadow: 0 0 6px rgb(142, 142, 142);
         border-radius: 0.8rem;
         display: flex;
         align-items: center;
@@ -59,6 +61,7 @@
 .loading-wrapper-sending{
     position: fixed;
     inset: 65px 0 0;
+    background-color: rgba(128, 128, 128, .1);
     .modal{
         position: absolute;
         left: 50%;
@@ -67,8 +70,9 @@
         width: 30%;
         height: fit-content;
         padding-block: 5rem;
-        background-color: rgb(245, 245, 245);;
-        border: 2px solid rgb(230, 230, 230);
+        background-color: rgb(245, 245, 245);
+        border: none;
+        box-shadow: 0 0 6px rgb(142, 142, 142);
         border-radius: 0.8rem;
         display: flex;
         align-items: center;
