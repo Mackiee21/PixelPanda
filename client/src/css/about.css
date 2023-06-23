@@ -42,12 +42,11 @@
   height: auto;
 }
 .about-wrapper .left-section .social-logo {
-  padding: 0.8rem 0.5rem;
+  padding-block: 0.8rem;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 1.2rem;
-  width: 60%;
+  justify-content: space-between;
+  width: 50%;
   margin-inline: auto;
   border-top: 2px solid grey;
   margin-top: 0.5rem;
