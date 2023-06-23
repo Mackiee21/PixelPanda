@@ -73,8 +73,8 @@
   transform: scale(1.0125);
 }
 .wrapper .link {
-  border: 1px solid grey;
-  color: rgb(43, 42, 42);
+  border: 1.2px solid rgb(6, 88, 6);
+  color: rgb(5, 120, 5);
   font-weight: 600;
   padding: 0.5rem 1.1rem;
   font-size: 1.1rem;

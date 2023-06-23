@@ -179,7 +179,7 @@
 @media (max-width: 40rem) {
   .contact-wrapper footer {
     font-size: 0.8rem;
-    padding: 1.5rem;
+    padding: 1.5rem 0;
   }
   .contact-wrapper footer .middle-footer {
     display: none;
