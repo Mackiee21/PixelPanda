@@ -21,7 +21,7 @@ function Photos(_, ref) {
     // const [currEl, setCurrEl] = useState(null);
 
     const pageHeaderInfo = {
-        link: "https://scontent.fceb1-2.fna.fbcdn.net/v/t39.30808-6/348436373_213259914852842_6357758812729540911_n.jpg?_nc_cat=100&cb=99be929b-59f725be&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeH60lnrXeDshehXAEKwLStxGvpQaazAut4a-lBprMC63jIwRFw0pA4wtS0Zf12wWl4QnDYNs6FGmNMOrrLK7tJT&_nc_ohc=4CG7Ju-xwl8AX-8V8AY&_nc_ht=scontent.fceb1-2.fna&oh=00_AfBw2tdB3YV2kfI8R3tLv28xhREekxYM5Ih08bGnSQKFew&oe=6493E170",
+        link: "https://scontent.fceb1-2.fna.fbcdn.net/v/t39.30808-6/348436373_213259914852842_6357758812729540911_n.jpg?_nc_cat=100&cb=99be929b-59f725be&ccb=1-7&_nc_sid=174925&_nc_eui2=AeH60lnrXeDshehXAEKwLStxGvpQaazAut4a-lBprMC63jIwRFw0pA4wtS0Zf12wWl4QnDYNs6FGmNMOrrLK7tJT&_nc_ohc=omHdlp8f2MgAX8lfsfG&_nc_ht=scontent.fceb1-2.fna&oh=00_AfCVmHvEOiX9slTMyyCIemXVR_nkR9NNltC4v1HFTLltzw&oe=6499D030",
         text: "Gallery"
     }
     const cards = [photo1, photo2, photo3, photo4, photo5, photo6, photobongbong, photo8, photo9];
