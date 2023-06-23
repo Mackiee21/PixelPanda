@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 0 2px 1px grey;
-  background-color: white;
+  background-color: rgb(245, 245, 245);
   z-index: 999;
   position: -webkit-sticky;
   position: sticky;
@@ -42,11 +42,11 @@
   color: rgb(4, 49, 4);
   font-weight: 600;
   font-size: 1.06rem;
-  padding: 0.5rem 0.7rem;
+  padding-inline: 0.2rem;
   transition: all 0.15s ease-out;
 }
 .header ul li a:hover {
-  background-color: rgb(188, 188, 188);
+  color: green;
 }
 .header .hamburger {
   background-color: transparent;

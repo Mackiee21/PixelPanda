@@ -23,7 +23,10 @@
   font-size: 1rem;
   border-radius: 0.3rem;
   -webkit-border-radius: 0.3rem;
-  outline: none;
+  position: relative;
+}
+.contact-wrapper form textarea:focus {
+  outline: 1.5px solid green;
 }
 @media (max-width: 40rem) {
   .contact-wrapper form textarea {
@@ -38,10 +41,6 @@
   .contact-wrapper form textarea::placeholder {
     font-size: 0.9rem;
   }
-}
-.contact-wrapper form textarea:is(:focus) {
-  outline: 1.5px solid green;
-  border-radius: 0.3rem;
 }
 .contact-wrapper form .input-wrapper {
   display: flex;
@@ -60,7 +59,6 @@
   border: 1.5px solid grey;
   border-radius: 0.3rem;
   -webkit-border-radius: 0.3rem;
-  outline: none;
 }
 @media (max-width: 40rem) {
   .contact-wrapper form .input-wrapper .input {
@@ -80,7 +78,7 @@
 }
 .contact-wrapper form .input-wrapper .note span {
   margin-inline: 0.1rem;
-  color: rgb(177, 1, 1);
+  color: rgb(195, 5, 5);
 }
 @media (max-width: 40rem) {
   .contact-wrapper form .input-wrapper .note {
@@ -129,16 +127,16 @@
   }
 }
 .contact-wrapper footer {
-  background-color: rgb(16, 16, 16);
-  color: white;
-  padding: 3rem 2rem;
+  background-color: rgb(245, 245, 245);
+  color: rgb(105, 104, 104);
+  border-top: 1px solid grey;
+  padding-block: 1rem;
   -webkit-margin-before: 2rem;
           margin-block-start: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .contact-wrapper footer .footer-info {
   text-align: center;
@@ -163,11 +161,11 @@
 .contact-wrapper footer .social-icons a i {
   padding: 0.5rem;
   transition: all 0.1s ease-in;
-  color: white;
+  color: rgb(107, 107, 107);
 }
 .contact-wrapper footer .social-icons a i:hover {
   cursor: pointer;
-  color: grey;
+  color: black;
 }
 .contact-wrapper footer .social-icons a i:is(:active, :visited) {
   color: unset;
