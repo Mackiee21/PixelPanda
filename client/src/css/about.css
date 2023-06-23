@@ -56,6 +56,12 @@
   position: relative;
   cursor: pointer;
 }
+@media (max-width: 40rem) {
+  .about-wrapper .left-section .social-logo {
+    width: 90%;
+    gap: 2.2rem;
+  }
+}
 .about-wrapper .left-section .social-logo::before {
   content: "Follow me";
   background-color: rgb(54, 181, 224);

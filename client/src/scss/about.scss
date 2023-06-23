@@ -47,6 +47,10 @@
             box-shadow: 0 0 4px 1px rgb(187, 187, 187);
             border-radius: 0.2rem;
             position: relative;
+            @media (max-width: 40rem){
+                width: 90%;
+                gap: 2.2rem;
+            }
             &::before {
                 content: "Follow me";
                 background-color: rgb(54, 181, 224);

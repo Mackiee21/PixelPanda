@@ -1,7 +1,16 @@
 import '../scss/about.scss';
-import { forwardRef } from 'react';
+import { forwardRef, useEffect, useRef } from 'react';
 
 function About(_, ref) {
+    const logoRef = useRef(null);
+    useEffect(() => {
+       if(window.screen.width <= 360){
+        Array.from(logoRef.current?.children).forEach(logo => {
+            const i = logo.children[0];
+            i.classList.replace("fa-xl", "fa-lg");
+        })
+       }
+    }, [])
     return(
         <div ref={ref} className="about-wrapper" id="0">
             <div className="left-section">
@@ -10,7 +19,7 @@ function About(_, ref) {
                 </div>
                 <h3>Allan Pandac</h3>
                 <h4>@PixelPanda</h4>
-                <div className='social-logo'>
+                <div className='social-logo' ref={logoRef}>
                     <a href='https://www.facebook.com/me.panda.07' target="_blank"><i className="fa-brands fa-facebook-square fa-xl" aria-hidden="true"></i></a>
                     <a href='https://www.instagram.com/allan_pandac/?fbclid=IwAR3zBcOFTsSK0Xczx__KaOGPI5or6yCgAMK3KM-Z3tKw_32ESAn3ooo9dNE' target="_blank"><i className="fa-brands fa-instagram fa-xl" aria-hidden="true"></i></a>
                     <a href='https://www.tiktok.com/@pandacallan' target="_blank"><i className="fa-brands fa-tiktok fa-xl" aria-hidden="true"></i></a>
