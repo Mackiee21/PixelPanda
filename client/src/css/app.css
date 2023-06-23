@@ -26,7 +26,7 @@ main {
 }
 
 .active {
-  border-bottom: 3px solid rgb(16, 121, 16);
+  border-bottom: 3px solid rgb(107, 104, 104);
 }
 
 @media (max-width: 40rem) {

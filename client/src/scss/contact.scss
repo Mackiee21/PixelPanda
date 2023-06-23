@@ -8,8 +8,8 @@
         margin-block-start: 1.5rem;
         h2{
             margin-block-end: 1rem;
-            font-size: 1.2rem;
-            color:rgb(6, 99, 6);
+            font-size: 1.1rem;
+            color: rgb(33, 37, 41);
         }
         textarea{
             resize: none;
@@ -21,7 +21,7 @@
             -webkit-border-radius: 0.3rem;
             position: relative;
             &:focus{
-                outline: 1.5px solid green;
+                outline: 1.5px solid grey;
             }
             @media (max-width: 40rem){
                 min-height: 6rem;
@@ -36,7 +36,7 @@
             flex-direction: column;
             label{
                 font-size: 1.1rem;
-                color: rgb(6, 99, 6);
+                color: rgb(33, 37, 41);
                 font-weight: 600;
             }
             .input{
@@ -52,7 +52,7 @@
                 }
             }
             .input:is(:focus){
-                outline: 1.2px solid green;
+                outline: 1.2px solid grey;
                 border-radius: 0.3rem;
             }
             .note{

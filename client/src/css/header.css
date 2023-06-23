@@ -46,7 +46,7 @@
   transition: all 0.15s ease-out;
 }
 .header ul li a:hover {
-  color: green;
+  color: goldenrod;
 }
 .header .hamburger {
   background-color: transparent;

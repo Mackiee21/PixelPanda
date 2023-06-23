@@ -3,7 +3,7 @@
   align-items: center;
   gap: 0.7rem;
   padding-block: 0.5rem;
-  border-bottom: 1.5px solid rgb(6, 99, 6);
+  border-bottom: 1.5px solid grey;
 }
 @media (max-width: 40rem) {
   .title-wrapper {
@@ -12,8 +12,8 @@
   }
 }
 .title-wrapper .title-img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   overflow: hidden;
 }
 @media (max-width: 40rem) {
@@ -31,8 +31,8 @@
   mix-blend-mode: normal;
 }
 .title-wrapper h3 {
-  font-size: 1.2rem;
-  color: rgb(6, 99, 6);
+  font-size: 1.125rem;
+  color: rgb(33, 37, 41);
 }
 @media (max-width: 40rem) {
   .title-wrapper h3 {

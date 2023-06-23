@@ -12,8 +12,8 @@
 .contact-wrapper form h2 {
   -webkit-margin-after: 1rem;
           margin-block-end: 1rem;
-  font-size: 1.2rem;
-  color: rgb(6, 99, 6);
+  font-size: 1.1rem;
+  color: rgb(33, 37, 41);
 }
 .contact-wrapper form textarea {
   resize: none;
@@ -26,7 +26,7 @@
   position: relative;
 }
 .contact-wrapper form textarea:focus {
-  outline: 1.5px solid green;
+  outline: 1.5px solid grey;
 }
 @media (max-width: 40rem) {
   .contact-wrapper form textarea {
@@ -48,7 +48,7 @@
 }
 .contact-wrapper form .input-wrapper label {
   font-size: 1.1rem;
-  color: rgb(6, 99, 6);
+  color: rgb(33, 37, 41);
   font-weight: 600;
 }
 .contact-wrapper form .input-wrapper .input {
@@ -66,7 +66,7 @@
   }
 }
 .contact-wrapper form .input-wrapper .input:is(:focus) {
-  outline: 1.2px solid green;
+  outline: 1.2px solid grey;
   border-radius: 0.3rem;
 }
 .contact-wrapper form .input-wrapper .note {
