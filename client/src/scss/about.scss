@@ -36,40 +36,43 @@
         }
         .social-logo{
             padding: 0.8rem 0.5rem;
-            padding-top: 1.5rem;
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 1.2rem;
             width: 60%;
             margin-inline: auto;
-            margin-top: 1.5rem;
-            box-shadow: 0 0 4px 1px rgb(187, 187, 187);
-            border-radius: 0.2rem;
-            position: relative;
-            @media (max-width: 40rem){
-                width: 75%;
-                gap: 2.2rem;
-            }
-            &::before {
-                content: "Follow me";
-                background-color: rgb(54, 181, 224);
-                box-shadow: inherit;
-                padding: 0.2rem 0.7rem;
-                border-radius: 1rem;
-                font-size: 0.9rem;
-                position: absolute;
-                top: -1rem;
-                left: 0.6rem;
-            }
+            border-top: 2px solid grey;
+            margin-top: 0.5rem;
+            // margin-top: 1.5rem;
+            // //box-shadow: 0 0 4px 0 rgb(187, 187, 187);
+            // box-shadow: inset 0px 6px 1px -2px rgba(203, 203, 203, 0.75);
+            // border-radius: 0.2rem;
+            // position: relative;
+            // @media (max-width: 40rem){
+            //     width: 75%;
+            //     gap: 2rem;
+            // }
+            // &::before {
+            //     content: "Follow me";
+            //     background-color: rgb(54, 181, 224);
+            //     box-shadow: inherit;
+            //     padding: 0.2rem 0.7rem;
+            //     border-radius: 1rem;
+            //     font-size: 0.9rem;
+            //     position: absolute;
+            //     top: -1rem;
+            //     left: 0.6rem;
+            // }
             cursor: pointer;
             a i{
                 // filter: drop-shadow(0 0 1px rgba(19, 86, 4, 0.7));
                 transition: all .10s ease-out;
                 padding: 0.5rem;
-                color: black;
+                color: rgb(64, 64, 64);
             }
             a i:hover{
+                color: black;
                 transform: scale(1.3)
             }
             a i:is(:active, :visited){
