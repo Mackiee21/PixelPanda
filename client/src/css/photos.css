@@ -74,7 +74,7 @@
 }
 .wrapper .link {
   border: 1.2px solid rgb(6, 88, 6);
-  color: rgb(5, 120, 5);
+  color: rgb(33, 37, 41);
   font-weight: 600;
   padding: 0.5rem 1.1rem;
   font-size: 1.1rem;
@@ -90,8 +90,7 @@
   transition: transform 0.15s ease-out;
 }
 .wrapper .link:hover {
-  background-color: rgb(11, 137, 11);
-  color: white;
+  background-color: rgb(236, 236, 236);
 }
 .wrapper .link:hover i {
   transform: translateX(8px);
