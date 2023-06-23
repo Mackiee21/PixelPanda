@@ -1,0 +1,127 @@
+.loading-wrapper-sent {
+  position: fixed;
+  inset: 65px 0 0;
+}
+.loading-wrapper-sent .modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-block: 5rem;
+  background-color: rgb(245, 245, 245);
+  border: 2px solid rgb(230, 230, 230);
+  border-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-animation: vanish 300ms 1.2s ease-out;
+          animation: vanish 300ms 1.2s ease-out;
+}
+@-webkit-keyframes vanish {
+  from {
+    padding-block: 5rem;
+  }
+  to {
+    padding-block: 0;
+  }
+}
+@keyframes vanish {
+  from {
+    padding-block: 5rem;
+  }
+  to {
+    padding-block: 0;
+  }
+}
+.loading-wrapper-sent .modal p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.loading-wrapper-sent .modal p span {
+  color: green;
+  font-size: 1.3em;
+  -webkit-margin-start: 0.2rem;
+          margin-inline-start: 0.2rem;
+}
+@media (max-width: 40rem) {
+  .loading-wrapper-sent .modal {
+    width: 80%;
+    padding-block: 3rem;
+  }
+  @-webkit-keyframes vanish {
+    from {
+      padding-block: 3rem;
+    }
+    to {
+      padding-block: 0;
+    }
+  }
+  @keyframes vanish {
+    from {
+      padding-block: 3rem;
+    }
+    to {
+      padding-block: 0;
+    }
+  }
+  .loading-wrapper-sent .modal p {
+    font-size: 1rem;
+  }
+  .loading-wrapper-sent .modal p span {
+    font-size: 1.3em;
+  }
+}
+
+.loading-wrapper-sending {
+  position: fixed;
+  inset: 65px 0 0;
+}
+.loading-wrapper-sending .modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-block: 5rem;
+  background-color: rgb(245, 245, 245);
+  border: 2px solid rgb(230, 230, 230);
+  border-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loading-wrapper-sending .modal p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.loading-wrapper-sending .modal p span {
+  color: green;
+  font-size: 1.3em;
+  -webkit-margin-start: 0.2rem;
+          margin-inline-start: 0.2rem;
+}
+@media (max-width: 40rem) {
+  .loading-wrapper-sending .modal {
+    width: 80%;
+    padding-block: 3rem;
+  }
+  .loading-wrapper-sending .modal p {
+    font-size: 1rem;
+  }
+  .loading-wrapper-sending .modal p span {
+    font-size: 1.3em;
+  }
+}

@@ -1,21 +1,30 @@
 import PageHeader from './pageHeader';
+import { MessageSent } from '../loading/messageSent';
+import { MessageSending } from '../loading/messageSent';
 import '../scss/contact.scss';
-import { useState, forwardRef } from 'react';
+import { useState, forwardRef, useRef } from 'react';
 
 function Contact(_, ref) {
     const [message, setMessage] = useState("");
     const [email, setEmail] = useState("");
+    const [isSending, setIsSending] = useState(null);
+    const [sent, setSent] = useState(false);
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     const submitMessage = (e) => {
         e.preventDefault();
         //just in case makalimot ka mak, matawag japon ang function sa ubos once e enter sa user
         //ang email input field
     }
-
+    if(isSending && !sent ){
+       document.body.style.overflow = "hidden";
+    }else{
+       document.body.style.overflow = "auto";
+    }
     const handleSubmit = (e) => {
         if(emailRegex.test(email)){
             if(message.trim() && email.trim()){
                 e.preventDefault();
+                setIsSending(true);
                 const messageType = e.target.innerText.toLowerCase();
                 let subject = messageType === "send message" ? "Personal Message" : "User Feedback";
                 // console.log(emailRef.current.value)
@@ -31,7 +40,11 @@ function Contact(_, ref) {
                 }).then(
                   message => {
                     if(message === "OK"){
-                        alert("Message Sent!");
+                        setIsSending(false);
+                        setSent(true);
+                        setTimeout(() => {
+                            setSent(false)
+                        }, 1500)
                         setMessage("");
                         setEmail("");
                     }else{
@@ -104,6 +117,8 @@ function Contact(_, ref) {
                     
                 </div>
             </footer>
+            { isSending && <MessageSending /> }
+            { sent && <MessageSent />}
         </div>
     );
 

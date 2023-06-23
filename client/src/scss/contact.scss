@@ -57,13 +57,14 @@
             .note{
                 margin-block-end: 1rem;
                 margin-block-start: 0.2rem;
+                font-size: 1.1rem;
                 color: grey;
                 span{
                     margin-inline: 0.1rem;
                     color: rgb(195, 5, 5);
                 }
                 @media (max-width: 40rem){
-                    font-size: 0.9rem;
+                    font-size: 1rem;
                 }
             }
         }
@@ -118,7 +119,7 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
-        font-size: 1rem;
+        font-size: 1.1rem;
        .footer-info{
         text-align: center;
             a{
@@ -156,7 +157,7 @@
             padding: 2rem;
         }
         @media (max-width: 40rem){
-            font-size: 0.8rem;
+            font-size: 0.95rem;
             padding: 1.5rem 0;
             .middle-footer{
                 display: none;

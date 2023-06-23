@@ -41,7 +41,7 @@
   text-decoration: none;
   color: rgb(4, 49, 4);
   font-weight: 600;
-  font-size: 1.06rem;
+  font-size: 1.1rem;
   padding-inline: 0.2rem;
   transition: all 0.15s ease-out;
 }
@@ -77,6 +77,13 @@
   .header ul li {
     margin-bottom: 1.5rem;
     padding: 0.5rem;
+    transition: background-color 0.1s ease-out;
+  }
+  .header ul li:hover {
+    background-color: lightblue;
+  }
+  .header ul li:hover a {
+    color: unset;
   }
   .header ul li a {
     border: none;

@@ -23,7 +23,6 @@
   font-size: 1rem;
   border-radius: 0.3rem;
   -webkit-border-radius: 0.3rem;
-  position: relative;
 }
 .contact-wrapper form textarea:focus {
   outline: 1.5px solid grey;
@@ -74,6 +73,7 @@
           margin-block-end: 1rem;
   -webkit-margin-before: 0.2rem;
           margin-block-start: 0.2rem;
+  font-size: 1.1rem;
   color: grey;
 }
 .contact-wrapper form .input-wrapper .note span {
@@ -82,7 +82,7 @@
 }
 @media (max-width: 40rem) {
   .contact-wrapper form .input-wrapper .note {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 .contact-wrapper form .form-btn-wrapper {
@@ -136,7 +136,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 .contact-wrapper footer .footer-info {
   text-align: center;
@@ -178,7 +178,7 @@
 }
 @media (max-width: 40rem) {
   .contact-wrapper footer {
-    font-size: 0.8rem;
+    font-size: 0.95rem;
     padding: 1.5rem 0;
   }
   .contact-wrapper footer .middle-footer {

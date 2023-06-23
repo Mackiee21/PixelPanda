@@ -1,0 +1,97 @@
+.loading-wrapper-sent{
+    position: fixed;
+    inset: 65px 0 0;
+    .modal{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 30%;
+        height: fit-content;
+        padding-block: 5rem;
+        background-color: rgb(245, 245, 245);;
+        border: 2px solid rgb(230, 230, 230);
+        border-radius: 0.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: vanish 300ms 1.2s ease-out;
+
+        @keyframes vanish {
+            from {
+                padding-block: 5rem;
+            }
+            to{
+                padding-block: 0;
+            }
+        }
+        p{
+            font-size: 1.5rem;
+            font-weight: 600;
+            width: fit-content;
+            span{
+                color: green;
+                font-size: 1.3em;
+                margin-inline-start: 0.2rem;
+            }
+        }
+        @media (max-width: 40rem){
+            width: 80%;
+            padding-block: 3rem;
+            @keyframes vanish {
+                from {
+                    padding-block: 3rem;
+                }
+                to{
+                    padding-block: 0;
+                }
+                
+            }
+            p{
+                font-size: 1rem;
+                span{
+                    font-size: 1.3em;
+                }
+            }
+        }
+    }
+}
+.loading-wrapper-sending{
+    position: fixed;
+    inset: 65px 0 0;
+    .modal{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 30%;
+        height: fit-content;
+        padding-block: 5rem;
+        background-color: rgb(245, 245, 245);;
+        border: 2px solid rgb(230, 230, 230);
+        border-radius: 0.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p{
+            font-size: 1.5rem;
+            font-weight: 600;
+            width: fit-content;
+            span{
+                color: green;
+                font-size: 1.3em;
+                margin-inline-start: 0.2rem;
+            }
+        }
+        @media (max-width: 40rem){
+            width: 80%;
+            padding-block: 3rem;
+            p{
+                font-size: 1rem;
+                span{
+                    font-size: 1.3em;
+                }
+            }
+        }
+    }
+}
