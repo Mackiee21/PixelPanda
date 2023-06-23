@@ -45,7 +45,7 @@
                 border: 1.5px solid grey;
                 @media (max-width: 40rem){
                     max-width: 100%;
-                    font-size: 0.9rem;
+                    font-size: 0.9rem !important;
                 }
             }
             .input:is(:focus){

@@ -58,7 +58,7 @@
 @media (max-width: 40rem) {
   .contact-wrapper form .input-wrapper .input {
     max-width: 100%;
-    font-size: 0.9rem;
+    font-size: 0.9rem !important;
   }
 }
 .contact-wrapper form .input-wrapper .input:is(:focus) {
