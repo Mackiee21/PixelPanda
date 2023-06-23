@@ -42,11 +42,11 @@
   color: rgb(4, 49, 4);
   font-weight: 600;
   font-size: 1.06rem;
-  padding-inline: 0.5rem;
+  padding: 0.5rem 0.7rem;
   transition: all 0.15s ease-out;
 }
 .header ul li a:hover {
-  color: goldenrod;
+  background-color: rgb(188, 188, 188);
 }
 .header .hamburger {
   background-color: transparent;
@@ -58,7 +58,6 @@
   display: none;
   visibility: hidden;
   color: rgb(4, 49, 4);
-  -webkit-tap-highlight-color: transparent;
 }
 @media (max-width: 40rem) {
   .header .hamburger {

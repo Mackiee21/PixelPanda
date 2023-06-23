@@ -44,7 +44,7 @@
                 padding: 0.6rem 0.8rem;
                 border: 1.5px solid grey;
                 @media (max-width: 40rem){
-                    font-size: 16px !important;
+                    font-size: 16px !important; //fixed the scrolling thingables
                 }
             }
             .input:is(:focus){
