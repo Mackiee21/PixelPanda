@@ -20,7 +20,7 @@
         width: 100%;
         height: inherit;
         object-fit: cover;
-        mix-blend-mode: normal; //removes the backgroun ata
+        mix-blend-mode:multiply; //removes the backgroun ata // normal
     }
     ul{
         display: flex;
