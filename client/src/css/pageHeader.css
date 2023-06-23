@@ -12,8 +12,8 @@
   }
 }
 .title-wrapper .title-img {
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   overflow: hidden;
 }
 @media (max-width: 40rem) {
@@ -28,7 +28,7 @@
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
-  mix-blend-mode: normal;
+  mix-blend-mode: multiply;
 }
 .title-wrapper h3 {
   font-size: 1.125rem;

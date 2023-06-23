@@ -9,8 +9,8 @@
         border-bottom-width: 1px;
     }
     .title-img{
-        width: 40px;
-        height: 40px;
+        width: 45px;
+        height: 45px;
         overflow: hidden;
         @media (max-width: 40rem){
             width: 35px;
@@ -21,7 +21,7 @@
             width: 100%;
             height: auto;
             object-fit: cover;
-            mix-blend-mode: normal;
+            mix-blend-mode: multiply;
         }
     }
     h3{

@@ -25,7 +25,7 @@
   height: inherit;
   -o-object-fit: cover;
      object-fit: cover;
-  mix-blend-mode: normal;
+  mix-blend-mode: multiply;
 }
 .header ul {
   display: flex;
