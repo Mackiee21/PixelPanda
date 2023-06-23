@@ -29,6 +29,7 @@
         }
         textarea:is(:focus){
             outline: 1.5px solid green;
+            border-radius: 0.3rem;
         }
         .input-wrapper{
             display: flex;
@@ -52,6 +53,7 @@
             }
             .input:is(:focus){
                 outline: 1.2px solid green;
+                border-radius: 0.3rem;
             }
             .note{
                 margin-block-end: 1rem;
