@@ -46,7 +46,7 @@ function Contact(_, ref) {
                         setSent(true);
                         setTimeout(() => {
                             setSent(false)
-                        }, 1500)
+                        }, 1250)
                         setMessage("");
                         setEmail("");
                     }else{

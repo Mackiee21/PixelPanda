@@ -17,16 +17,16 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        animation: vanish 300ms 1.2s ease-out;
+        // animation: vanish 300ms 1.2s ease-out;
 
-        @keyframes vanish {
-            from {
-                padding-block: 5rem;
-            }
-            to{
-                padding-block: 0;
-            }
-        }
+        // @keyframes vanish {
+        //     from {
+        //         padding-block: 5rem;
+        //     }
+        //     to{
+        //         padding-block: 0;
+        //     }
+        // }
         p{
             font-size: 1.5rem;
             font-weight: 600;
@@ -39,16 +39,16 @@
         }
         @media (max-width: 40rem){
             width: 80%;
-            padding-block: 3rem;
-            @keyframes vanish {
-                from {
-                    padding-block: 3rem;
-                }
-                to{
-                    padding-block: 0;
-                }
+            padding-block: 3.5rem;
+            // @keyframes vanish {
+            //     from {
+            //         padding-block: 3rem;
+            //     }
+            //     to{
+            //         padding-block: 0;
+            //     }
                 
-            }
+            // }
             p{
                 font-size: 1rem;
                 span{
