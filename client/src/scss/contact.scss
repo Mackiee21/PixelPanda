@@ -17,6 +17,7 @@
             width: 100%;
             min-height: 10rem;
             font-size: 1rem;
+            border: 1.25px solid grey;
             border-radius: 0.3rem;
             -webkit-border-radius: 0.3rem;
             &:focus{
@@ -43,7 +44,7 @@
                 max-width: 25vw;
                 font-size: 1rem;
                 padding: 0.6rem 0.8rem;
-                border: 1.5px solid grey;
+                border: 1.25px solid grey;
                 border-radius: 0.3rem;
                 -webkit-border-radius: 0.3rem;
                 @media (max-width: 40rem){

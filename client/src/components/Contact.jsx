@@ -79,7 +79,7 @@ function Contact(_, ref) {
                 <h2>Send me a message</h2>
                 <textarea onChange={handleChange} value={message} placeholder='Write your message here...' required></textarea>
                 <div className='input-wrapper'>
-                    <label htmlFor="input">Your Email</label>
+                    <label htmlFor="input">Email</label>
                     <input onChange={handleEmailChange} value={email} className='input' id='input' type="email"  required />
                     <div className='note'>
                         <p> Note: <span><i className="fa-solid fa-circle-exclamation"></i></span>Please specify a correct and valid email as the sender. The sent email will also not be 
