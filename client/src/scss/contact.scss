@@ -20,9 +20,6 @@
             border: 1.25px solid grey;
             border-radius: 0.3rem;
             -webkit-border-radius: 0.3rem;
-            &:focus{
-                outline: 1.5px solid grey;
-            }
             @media (max-width: 40rem){
                 min-height: 6rem;
                 &::placeholder{
@@ -50,10 +47,6 @@
                 @media (max-width: 40rem){
                     font-size: 16px !important; //fixed the scrolling thingables
                 }
-            }
-            .input:is(:focus){
-                outline: 1.2px solid grey;
-                border-radius: 0.3rem;
             }
             .note{
                 margin-block-end: 1rem;
